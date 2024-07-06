@@ -10,6 +10,25 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'main': '#FFFBF5',
+              'main-2':'#F7EFE5',
+              'second' : '#C3ACD0',
+              'second-2' : '#7743DB',
+              'third' : '#3A3A3A'
+            },
+            screens:{
+              'rw': {'max': '1023px'}
+            }
+          }
+        }
+      }
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -26,7 +45,7 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="bg-main">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
